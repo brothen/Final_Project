@@ -7,7 +7,7 @@ func _ready():
 	yield(player,"ready")
 
 func start():
-	player.velocity=Vector2.ZERO
+	player.velocity=Vector2(0,1)
 	player.set_animation("Idle")
 
 func physics_process(_delta):
