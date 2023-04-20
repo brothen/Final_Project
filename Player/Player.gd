@@ -98,3 +98,8 @@ func _on_Level_3_Exit_body_entered(body):
 	if body.name == "Player":
 		var _scene = get_tree().change_scene("res://End_Screen.tscn")
 
+
+
+func _on_Level_2_Exit_body_entered(body):
+	if body.name == "Player":
+		var _scene = get_tree().change_scene("res://Level3.tscn")
