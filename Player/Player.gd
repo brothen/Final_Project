@@ -94,6 +94,7 @@ func _on_Area2D_body_entered(body):
 		var _scene = get_tree().change_scene("res://Level2.tscn")
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
@@ -110,5 +111,7 @@ func _on_Level_2_Exit_body_entered(body):
 >>>>>>> parent of 2bcf1a9 (Merge branch 'main' of https://github.com/brothen/Final_Project)
 =======
 >>>>>>> parent of 2bcf1a9 (Merge branch 'main' of https://github.com/brothen/Final_Project)
+=======
+>>>>>>> parent of 9c07c62 (Merge branch 'main' of https://github.com/brothen/Final_Project)
 =======
 >>>>>>> parent of 9c07c62 (Merge branch 'main' of https://github.com/brothen/Final_Project)
