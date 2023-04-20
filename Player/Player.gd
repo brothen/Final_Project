@@ -14,10 +14,8 @@ export var move_speed = 20
 export var max_move = 300
 
 export var jump_speed = 200
-export var max_jump = 600
+export var max_jump = 500
 
-export var leap_speed = 200
-export var max_leap = 1200
 
 var moving = false
 var is_jumping = false
@@ -26,6 +24,8 @@ var should_direction_flip = true # wether or not player controls (left/right) ca
 
 func _physics_process(_delta):
 	if Input.is_action_just_pressed("flip"):
+		max_jump*=-1
+		jump_speed*=-1
 		velocity.y=0
 		if flipped==false:
 			gravity=Vector2(0,-30)

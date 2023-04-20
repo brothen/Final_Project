@@ -142,10 +142,9 @@ scale = Vector2( 3, 3 )
 script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 10, 6 )
+position = Vector2( 10, -4 )
 frames = SubResource( 17 )
 animation = "Idle"
-flip_v = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -0.333333, 1.33333 )
@@ -153,23 +152,22 @@ shape = SubResource( 2 )
 
 [node name="Floor" type="Node2D" parent="."]
 position = Vector2( 0, 1 )
-rotation = 3.14159
 
 [node name="Left" type="RayCast2D" parent="Floor"]
 enabled = true
-cast_to = Vector2( 0, 20 )
+cast_to = Vector2( 0, 22 )
 collision_mask = 2
 
 [node name="Center" type="RayCast2D" parent="Floor"]
 position = Vector2( -9.33333, 0 )
 enabled = true
-cast_to = Vector2( 0, 20 )
+cast_to = Vector2( 0, 22 )
 collision_mask = 2
 
 [node name="Right" type="RayCast2D" parent="Floor"]
 position = Vector2( 8.66667, 0 )
 enabled = true
-cast_to = Vector2( 0, 20 )
+cast_to = Vector2( 0, 22 )
 collision_mask = 2
 
 [node name="StateMachine" type="Node" parent="."]
