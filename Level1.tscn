@@ -1,4 +1,4 @@
-[gd_scene load_steps=134 format=2]
+[gd_scene load_steps=130 format=2]
 
 [ext_resource path="res://Assets/1 Tiles/IndustrialTile_08.png" type="Texture" id=1]
 [ext_resource path="res://Assets/1 Tiles/IndustrialTile_77.png" type="Texture" id=2]
@@ -64,12 +64,8 @@
 [ext_resource path="res://Assets/3 Objects/Pointer2.png" type="Texture" id=62]
 [ext_resource path="res://Assets/1 Tiles/IndustrialTile_63.png" type="Texture" id=63]
 [ext_resource path="res://Assets/3 Objects/Box1.png" type="Texture" id=64]
-[ext_resource path="res://Player/Player_container.gd" type="Script" id=65]
 [ext_resource path="res://Camera2D.gd" type="Script" id=66]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=67]
-[ext_resource path="res://UI/HUD.gd" type="Script" id=68]
-[ext_resource path="res://Assets/SHEET.PNG" type="Texture" id=69]
-[ext_resource path="res://Enemies/Alien.gd" type="Script" id=70]
 
 [sub_resource type="TileSet" id=2]
 0/name = "IndustrialTile_02.png 0"
@@ -1395,8 +1391,13 @@ points = PoolVector2Array( 32, 16, 0, 16, 0, 0, 32, 0 )
 12/shapes = [  ]
 12/z_index = 0
 
-[sub_resource type="RectangleShape2D" id=64]
-extents = Vector2( 40, 40 )
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [  ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
 
 [node name="Level1" type="Node2D"]
 
@@ -1412,7 +1413,7 @@ cell_size = Vector2( 32, 32 )
 collision_layer = 2
 collision_mask = 2
 format = 1
-tile_data = PoolIntArray( 131188, 17, 0, 131189, 17, 0, 458838, 3, 0, 458844, 3, 0, 524374, 12, 0, 524380, 12, 0, 589867, 8, 0, 589868, 8, 0, 589869, 8, 0, 589870, 8, 0, 589871, 8, 0, 589872, 8, 0, 589873, 8, 0, 655395, 5, 0, 655396, 6, 0, 655397, 6, 0, 655398, 6, 0, 655399, 6, 0, 655400, 7, 0, 655489, 17, 0, 655490, 17, 0, 655491, 17, 0, 655492, 17, 0, 655493, 17, 0, 655494, 17, 0, 852091, 16, 0, 852092, 16, 0, 852093, 16, 0, 1179760, 16, 0, 1179761, 16, 0, 1376258, 4, 0, 1376259, 4, 0, 1376260, 4, 0, 1376261, 4, 0, 1376262, 4, 0, 1376303, 4, 0, 1376304, 4, 0, 1376305, 4, 0, 1376306, 4, 0, 1376307, 4, 0, 1966167, 4, 0 )
+tile_data = PoolIntArray( 131188, 17, 0, 131189, 17, 0, 589867, 8, 0, 589868, 8, 0, 589869, 8, 0, 589870, 8, 0, 589871, 8, 0, 589872, 8, 0, 589873, 8, 0, 655395, 5, 0, 655396, 6, 0, 655397, 6, 0, 655398, 6, 0, 655399, 6, 0, 655400, 7, 0, 655489, 17, 0, 655490, 17, 0, 655491, 17, 0, 655492, 17, 0, 655493, 17, 0, 655494, 17, 0, 852091, 16, 0, 852092, 16, 0, 852093, 16, 0, 1179760, 16, 0, 1179761, 16, 0, 1376258, 4, 0, 1376259, 4, 0, 1376260, 4, 0, 1376261, 4, 0, 1376262, 4, 0, 1376303, 4, 0, 1376304, 4, 0, 1376305, 4, 0, 1376306, 4, 0, 1376307, 4, 0, 1966167, 4, 0 )
 
 [node name="Platform" type="TileMap" parent="."]
 tile_set = SubResource( 4 )
@@ -1426,13 +1427,13 @@ tile_data = PoolIntArray( 524375, 0, 0, 524376, 0, 0, 524377, 0, 0, 524378, 0, 0
 tile_set = SubResource( 5 )
 cell_size = Vector2( 32, 32 )
 format = 1
-tile_data = PoolIntArray( 655407, 7, 0, 720943, 7, 0, 786479, 5, 0, 852015, 7, 0, 917551, 7, 0, 983087, 7, 0, 1048623, 7, 0, 1048631, 6, 0, 1048645, 2, 0, 1114159, 5, 0, 1114167, 6, 0, 1179695, 7, 0, 1179703, 6, 0, 1179753, 1, 0, 1245189, 0, 0, 1245231, 7, 0, 1245239, 8, 0, 1310767, 7, 0, 1376287, 11, 0, 1507354, 9, 0, 1507355, 9, 0, 1638424, 6, 0, 1638477, 10, 0, 1703960, 6, 0, 1769496, 6, 0, 1835032, 6, 0, 1900568, 8, 0, 1900631, 12, 0 )
+tile_data = PoolIntArray( 196695, 9, 0, 196696, 9, 0, 196697, 9, 0, 196698, 9, 0, 196699, 9, 0, 262231, 9, 0, 262235, 9, 0, 327767, 9, 0, 327771, 9, 0, 393303, 9, 0, 393304, 9, 0, 393305, 9, 0, 393306, 9, 0, 393307, 9, 0, 458842, 9, 0, 524378, 9, 0, 589913, 9, 0, 589914, 9, 0, 655407, 7, 0, 655450, 9, 0, 720943, 7, 0, 720984, 9, 0, 720985, 9, 0, 720986, 9, 0, 786479, 5, 0, 852015, 7, 0, 917551, 7, 0, 983087, 7, 0, 1048623, 7, 0, 1048631, 6, 0, 1048645, 2, 0, 1114159, 5, 0, 1114167, 6, 0, 1179695, 7, 0, 1179703, 6, 0, 1179753, 1, 0, 1245189, 0, 0, 1245231, 7, 0, 1245239, 8, 0, 1310767, 7, 0, 1376287, 11, 0, 1507354, 9, 0, 1507355, 9, 0, 1638424, 6, 0, 1638477, 10, 0, 1703960, 6, 0, 1769496, 6, 0, 1835032, 6, 0, 1900568, 8, 0, 1900631, 12, 0 )
 
 [node name="Player_container" type="Node2D" parent="."]
-script = ExtResource( 65 )
 
 [node name="Player" parent="Player_container" instance=ExtResource( 67 )]
-position = Vector2( 100, 600 )
+position = Vector2( 154, 313 )
+scale = Vector2( 2, 2 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -1499,53 +1500,6 @@ polygon = PoolVector2Array( 7, -14.9, 15, -7.9, 15, -5.4, 16, -0.1, 16, 2, 14.8,
 [node name="RayCast2D" type="RayCast2D" parent="Enemy_container/Meteor"]
 
 [node name="Alien" type="KinematicBody2D" parent="Enemy_container"]
-position = Vector2( 1154, 285 )
-scale = Vector2( 0.4, 0.4 )
-script = ExtResource( 70 )
 
-[node name="Sprite" type="Sprite" parent="Enemy_container/Alien"]
-texture = ExtResource( 69 )
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Enemy_container/Alien"]
-polygon = PoolVector2Array( 32.5, -74.5, 34.2, -64.5, 44.3, -64.5, 47.5, -61.3, 47.5, -51.5, 57.3, -51.5, 60.5, -48.3, 60.5, 6.2, 47.5, 8.2, 47.5, 19.2, 34.5, 21.2, 34.5, 26.5, 45.2, 26.5, 47.2, 39.5, 57.3, 39.5, 60.5, 42.7, 60.5, 71.5, 57.8, 71.5, 41.5, 73.8, 41.5, 70.8, 39.8, 60.5, 29.7, 60.5, 26.5, 57.3, 26.5, 47.5, -17.5, 47.5, -17.5, 58.2, -30.5, 60.2, -30.5, 70.3, -33.7, 73.5, -48.3, 73.5, -51.5, 70.3, -51.5, 41.8, -38.5, 39.8, -38.5, 29.7, -35.3, 26.5, -25.5, 26.5, -25.5, 21.5, -36.5, 21.5, -36.5, 18.8, -38.2, 8.5, -48.3, 8.5, -51.5, 5.3, -51.5, -49.5, -48.8, -49.5, -38.5, -51.2, -38.5, -61.3, -35.3, -64.5, -25.5, -64.5, -25.5, -74.7, -23.5, -75.7, -23.5, -77.5, 32.5, -77.5 )
-
-[node name="Area2D" type="Area2D" parent="Enemy_container/Alien"]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Enemy_container/Alien/Area2D"]
-polygon = PoolVector2Array( -25, -81, 32, -79, 44, -66, 55, -52, 61, 6, 58, 42, 59, 70, 41, 72, -29, 70, -52, 70, -52, 42, -52, 3, -50, -55, -38, -64 )
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="HUD" type="Control" parent="CanvasLayer"]
-margin_right = 40.0
-margin_bottom = 40.0
-script = ExtResource( 68 )
-
-[node name="Background" type="ColorRect" parent="CanvasLayer/HUD"]
-margin_right = 1024.0
-margin_bottom = 20.0
-color = Color( 0, 0, 0, 0.501961 )
-
-[node name="Score" type="Label" parent="CanvasLayer/HUD"]
-margin_left = 512.0
-margin_right = 1024.0
-margin_bottom = 20.0
-text = "Score"
-align = 2
-valign = 1
-
-[node name="Lives" type="Label" parent="CanvasLayer/HUD"]
-margin_right = 512.0
-margin_bottom = 20.0
-text = "Lives"
-valign = 1
-
-[node name="Area2D" type="Area2D" parent="."]
-position = Vector2( 4200, 330 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 24, -51 )
-shape = SubResource( 64 )
-
-[connection signal="body_entered" from="Enemy_container/Alien/Area2D" to="Enemy_container/Alien" method="_on_Area2D_body_entered"]
-[connection signal="body_entered" from="Area2D" to="Player_container/Player" method="_on_Area2D_body_entered"]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Enemy_container/Alien"]
+frames = SubResource( 1 )
