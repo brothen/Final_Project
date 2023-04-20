@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 [gd_scene load_steps=138 format=2]
+=======
+[gd_scene load_steps=130 format=2]
+>>>>>>> parent of 2bcf1a9 (Merge branch 'main' of https://github.com/brothen/Final_Project)
 =======
 [gd_scene load_steps=130 format=2]
 >>>>>>> parent of 2bcf1a9 (Merge branch 'main' of https://github.com/brothen/Final_Project)
@@ -44,7 +48,11 @@
 [ext_resource path="res://Assets/space_background_pack/layers/parallax-space-backgound.png" type="Texture" id=38]
 [ext_resource path="res://Assets/1 Tiles/IndustrialTile_23.png" type="Texture" id=39]
 <<<<<<< HEAD
+<<<<<<< HEAD
 [ext_resource path="res://Level2Camera.gd" type="Script" id=40]
+=======
+[ext_resource path="res://Assets/space_background_pack/layers/parallax-space-stars.png" type="Texture" id=40]
+>>>>>>> parent of 2bcf1a9 (Merge branch 'main' of https://github.com/brothen/Final_Project)
 =======
 [ext_resource path="res://Assets/space_background_pack/layers/parallax-space-stars.png" type="Texture" id=40]
 >>>>>>> parent of 2bcf1a9 (Merge branch 'main' of https://github.com/brothen/Final_Project)
@@ -68,7 +76,10 @@
 [ext_resource path="res://Assets/1 Tiles/IndustrialTile_45.png" type="Texture" id=58]
 [ext_resource path="res://Assets/1 Tiles/IndustrialTile_81.png" type="Texture" id=59]
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 2bcf1a9 (Merge branch 'main' of https://github.com/brothen/Final_Project)
 [ext_resource path="res://Assets/3 Objects/Pointer1.png" type="Texture" id=60]
 [ext_resource path="res://Assets/1 Tiles/IndustrialTile_27.png" type="Texture" id=61]
 [ext_resource path="res://Assets/3 Objects/Pointer2.png" type="Texture" id=62]
@@ -1419,8 +1430,11 @@ extents = Vector2( 50, 50 )
 tile_set = SubResource( 2 )
 cell_size = Vector2( 32, 32 )
 <<<<<<< HEAD
+<<<<<<< HEAD
 show_collision = true
 collision_layer = 2
+=======
+>>>>>>> parent of 2bcf1a9 (Merge branch 'main' of https://github.com/brothen/Final_Project)
 =======
 >>>>>>> parent of 2bcf1a9 (Merge branch 'main' of https://github.com/brothen/Final_Project)
 format = 1
@@ -1436,8 +1450,11 @@ tile_data = PoolIntArray( 131188, 17, 0, 131189, 17, 0, 589867, 8, 0, 589868, 8,
 tile_set = SubResource( 4 )
 cell_size = Vector2( 32, 32 )
 <<<<<<< HEAD
+<<<<<<< HEAD
 show_collision = true
 collision_layer = 2
+=======
+>>>>>>> parent of 2bcf1a9 (Merge branch 'main' of https://github.com/brothen/Final_Project)
 =======
 >>>>>>> parent of 2bcf1a9 (Merge branch 'main' of https://github.com/brothen/Final_Project)
 format = 1
