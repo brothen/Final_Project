@@ -25,14 +25,29 @@ margin_bottom = 25.0
 rect_min_size = Vector2( 100, 25 )
 focus_neighbour_left = NodePath("../Quit Button")
 focus_neighbour_top = NodePath("../Quit Button")
+focus_neighbour_right = NodePath("../Options Button")
+focus_neighbour_bottom = NodePath("../Options Button")
 theme = SubResource( 1 )
 text = "Start"
 
-[node name="Quit Button" type="Button" parent="VBoxContainer"]
+[node name="Options Button" type="Button" parent="VBoxContainer"]
 margin_top = 29.0
 margin_right = 100.0
 margin_bottom = 54.0
 rect_min_size = Vector2( 100, 25 )
+focus_neighbour_left = NodePath("../Start Button")
+focus_neighbour_top = NodePath("../Start Button")
+focus_neighbour_right = NodePath("../Quit Button")
+focus_neighbour_bottom = NodePath("../Quit Button")
+text = "Options"
+
+[node name="Quit Button" type="Button" parent="VBoxContainer"]
+margin_top = 58.0
+margin_right = 100.0
+margin_bottom = 83.0
+rect_min_size = Vector2( 100, 25 )
+focus_neighbour_left = NodePath("../Options Button")
+focus_neighbour_top = NodePath("../Options Button")
 focus_neighbour_right = NodePath("../Start Button")
 focus_neighbour_bottom = NodePath("../Start Button")
 text = "Quit"
