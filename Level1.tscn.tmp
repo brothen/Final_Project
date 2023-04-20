@@ -1,4 +1,4 @@
-[gd_scene load_steps=132 format=2]
+[gd_scene load_steps=131 format=2]
 
 [ext_resource path="res://Assets/1 Tiles/IndustrialTile_08.png" type="Texture" id=1]
 [ext_resource path="res://Assets/1 Tiles/IndustrialTile_77.png" type="Texture" id=2]
@@ -67,7 +67,6 @@
 [ext_resource path="res://Player/Player_container.gd" type="Script" id=65]
 [ext_resource path="res://Camera2D.gd" type="Script" id=66]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=67]
-[ext_resource path="res://UI/HUD.gd" type="Script" id=68]
 
 [sub_resource type="TileSet" id=2]
 0/name = "IndustrialTile_02.png 0"
@@ -1505,29 +1504,3 @@ polygon = PoolVector2Array( 7, -14.9, 15, -7.9, 15, -5.4, 16, -0.1, 16, 2, 14.8,
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Enemy_container/Alien"]
 frames = SubResource( 1 )
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="HUD" type="Control" parent="CanvasLayer"]
-margin_right = 40.0
-margin_bottom = 40.0
-script = ExtResource( 68 )
-
-[node name="Background" type="ColorRect" parent="CanvasLayer/HUD"]
-margin_right = 1024.0
-margin_bottom = 20.0
-color = Color( 0, 0, 0, 0.501961 )
-
-[node name="Score" type="Label" parent="CanvasLayer/HUD"]
-margin_left = 512.0
-margin_right = 1024.0
-margin_bottom = 20.0
-text = "Score"
-align = 2
-valign = 1
-
-[node name="Lives" type="Label" parent="CanvasLayer/HUD"]
-margin_right = 512.0
-margin_bottom = 20.0
-text = "Lives"
-valign = 1
