@@ -85,6 +85,7 @@ func is_on_floor():
 
 func die():
 	queue_free()
+<<<<<<< HEAD
 
 
 func _on_Level_1_Exit_body_entered(body):
@@ -103,3 +104,5 @@ func _on_Level_3_Exit_body_entered(body):
 func _on_Level_2_Exit_body_entered(body):
 	if body.name == "Player":
 		var _scene = get_tree().change_scene("res://Level3.tscn")
+=======
+>>>>>>> parent of 2bcf1a9 (Merge branch 'main' of https://github.com/brothen/Final_Project)
