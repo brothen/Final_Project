@@ -6,17 +6,22 @@ var velocity = Vector2.ZERO
 var jump_power = Vector2.ZERO
 var direction = 1
 
-export var gravity = Vector2(0,30)
-
 var flipped=false
 
-export var move_speed = 50
-export var max_move = 400
+export var gravity = Vector2(0,30)
 
-export var jump_speed = 10
-export var max_jump = 120
+export var move_speed = 20
+export var max_move = 300
 
+export var jump_speed = 200
+export var max_jump = 600
 
+export var leap_speed = 200
+export var max_leap = 1200
+
+var moving = false
+var is_jumping = false
+var should_direction_flip = true # wether or not player controls (left/right) can flip the player sprite
 
 
 func _physics_process(_delta):
@@ -24,23 +29,55 @@ func _physics_process(_delta):
 		velocity.y=0
 		if flipped==false:
 			gravity=Vector2(0,-30)
+			$Floor.rotation_degrees=180
 			$AnimatedSprite.flip_v=true
+			$AnimatedSprite.position.y=6
 			flipped=true
 		elif flipped==true:
 			gravity=Vector2(0,30)
+			$Floor.rotation_degrees=0
 			$AnimatedSprite.flip_v=false
+			$AnimatedSprite.position.y=-4
 			flipped=false
+		
 	velocity.x = clamp(velocity.x,-max_move,max_move)
 		
-	if direction < 0 and not $AnimatedSprite.flip_h: $AnimatedSprite.flip_h = true
-	if direction > 0 and $AnimatedSprite.flip_h: $AnimatedSprite.flip_h = false
+	if should_direction_flip:
+		if direction < 0 and not $AnimatedSprite.flip_h: $AnimatedSprite.flip_h = true
+		if direction > 0 and $AnimatedSprite.flip_h: $AnimatedSprite.flip_h = false
 	
+	
+	if position.y > 1500:
+		queue_free()
+		
 
+func is_moving():
+	if Input.is_action_pressed("left") or Input.is_action_pressed("right"):
+		return true
+	return false
 
-func set_direction(d):
-	direction = d
+func move_vector():
+	return Vector2(Input.get_action_strength("right") - Input.get_action_strength("left"),0.0)
+
+func _unhandled_input(event):
+	if event.is_action_pressed("left"):
+		direction = -1
+	if event.is_action_pressed("right"):
+		direction = 1
 
 func set_animation(anim):
 	if $AnimatedSprite.animation == anim: return
 	if $AnimatedSprite.frames.has_animation(anim): $AnimatedSprite.play(anim)
 	else: $AnimatedSprite.play()
+
+func is_on_floor():
+	var fl = $Floor.get_children()
+	for f in fl:
+		if f.is_colliding():
+			return true
+	return false
+
+
+
+func die():
+	queue_free()
