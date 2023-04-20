@@ -14,7 +14,7 @@ export var move_speed = 50
 export var max_move = 400
 
 export var jump_speed = 10
-export var max_jump = 100
+export var max_jump = 120
 
 
 
