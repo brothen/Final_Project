@@ -42,8 +42,9 @@ position = Vector2( 154, 313 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 2 )
+collision_layer = 2
 format = 1
-tile_data = PoolIntArray( 393217, 0, 0 )
+tile_data = PoolIntArray( -655358, 0, 0, 393217, 0, 0 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 

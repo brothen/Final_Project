@@ -1,16 +1,14 @@
 extends Node
 
-onready var state=null
-onready var previous_state=null
-onready var state_name=""
+onready var state = null
+onready var previous_state = null
+onready var state_name = ""
 
 func _ready():
 	if get_child_count():
 		set_state(get_children()[0].name)
 
 func _physics_process(delta):
-	if Input.is_action_just_pressed("flip"):
-		set_state("Falling")
 	if state and state.has_method("physics_process"):
 		state.physics_process(delta)
 
@@ -35,3 +33,4 @@ func set_state(s):
 			state.start()
 	else:
 		state = null
+	
