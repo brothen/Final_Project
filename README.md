@@ -6,6 +6,7 @@ We gave the player the ability to reverse gravity and had the levels get less cr
 
 ## Game Play
 Get to the end of each level using your cool gravity flipping power
+
 Use A and D to move left and right, W to jump, and G to flip gravity
 
 ## Impediments
