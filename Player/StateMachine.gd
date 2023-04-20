@@ -9,6 +9,8 @@ func _ready():
 		set_state(get_children()[0].name)
 
 func _physics_process(delta):
+	if Input.is_action_just_pressed("flip"):
+		set_state("Falling")
 	if state and state.has_method("physics_process"):
 		state.physics_process(delta)
 
