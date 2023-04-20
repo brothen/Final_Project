@@ -87,7 +87,14 @@ func die():
 	queue_free()
 
 
-func _on_Area2D_body_entered(body):
+func _on_Level_1_Exit_body_entered(body):
 	if body.name == "Player":
 		var _scene = get_tree().change_scene("res://Level2.tscn")
+
+
+
+
+func _on_Level_3_Exit_body_entered(body):
+	if body.name == "Player":
+		var _scene = get_tree().change_scene("res://End_Screen.tscn")
 
