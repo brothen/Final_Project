@@ -85,3 +85,9 @@ func is_on_floor():
 
 func die():
 	queue_free()
+
+
+func _on_Area2D_body_entered(body):
+	if body.name == "Player":
+		var _scene = get_tree().change_scene("res://Level2.tscn")
+

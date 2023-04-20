@@ -28,6 +28,7 @@ Cowboys:
 Background: https://opengameart.org/content/desert-dunes-background-looping-8-colours-16-bit
 Tiles: https://opengameart.org/content/pixel-art-sand-tileset
 Clouds: https://opengameart.org/content/tileset-and-assets-for-a-scorched-earth-type-game
+Door: https://opengameart.org/content/castle-door
 
 
 ## References
