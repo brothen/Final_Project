@@ -42,3 +42,5 @@ margin_right = 512.0
 margin_bottom = 20.0
 text = "Lives"
 valign = 1
+
+[node name="Door" type="AudioStreamPlayer" parent="."]
