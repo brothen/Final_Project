@@ -19,16 +19,6 @@ animations = [ {
 
 [node name="Game" type="Node2D"]
 
-<<<<<<< HEAD
-[node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 154, 313 )
-
-[node name="TileMap" type="TileMap" parent="."]
-tile_set = SubResource( 2 )
-collision_layer = 2
-format = 1
-tile_data = PoolIntArray( -655358, 0, 0, 393217, 0, 0 )
-=======
 [node name="Background" type="TileMap" parent="."]
 format = 1
 
@@ -45,7 +35,6 @@ format = 1
 
 [node name="Player" parent="Player_container" instance=ExtResource( 1 )]
 position = Vector2( 154, 313 )
->>>>>>> cab5cec77fbdc641f28eb93de4d5ad333cb6a055
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
