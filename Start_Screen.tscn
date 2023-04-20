@@ -25,45 +25,28 @@ margin_bottom = 25.0
 rect_min_size = Vector2( 100, 25 )
 focus_neighbour_left = NodePath("../Quit Button")
 focus_neighbour_top = NodePath("../Quit Button")
-focus_neighbour_right = NodePath("../Options Button")
-focus_neighbour_bottom = NodePath("../Options Button")
 theme = SubResource( 1 )
 text = "Start"
 
-[node name="Options Button" type="Button" parent="VBoxContainer"]
+[node name="Quit Button" type="Button" parent="VBoxContainer"]
 margin_top = 29.0
 margin_right = 100.0
 margin_bottom = 54.0
 rect_min_size = Vector2( 100, 25 )
-focus_neighbour_left = NodePath("../Start Button")
-focus_neighbour_top = NodePath("../Start Button")
-focus_neighbour_right = NodePath("../Quit Button")
-focus_neighbour_bottom = NodePath("../Quit Button")
-text = "Options"
-
-[node name="Quit Button" type="Button" parent="VBoxContainer"]
-margin_top = 58.0
-margin_right = 100.0
-margin_bottom = 83.0
-rect_min_size = Vector2( 100, 25 )
-focus_neighbour_left = NodePath("../Options Button")
-focus_neighbour_top = NodePath("../Options Button")
 focus_neighbour_right = NodePath("../Start Button")
 focus_neighbour_bottom = NodePath("../Start Button")
 text = "Quit"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 anchor_left = 0.5
-anchor_top = 0.283
 anchor_right = 0.5
-anchor_bottom = 0.283
-margin_left = -334.0
-margin_top = -19.8
-margin_right = -1.0
-margin_bottom = 0.199982
-rect_scale = Vector2( 2, 2 )
+margin_left = -171.0
+margin_top = 199.0
+margin_right = 171.0
+margin_bottom = 219.0
 tab_size = 12
-text = "A Spaceman, a Pirate, and a Cowboy Walk Into a Bar"
+text = "A Spaceman, a Pirate, and a Cowboy walked into a bar"
+fit_content_height = true
 
 [connection signal="pressed" from="VBoxContainer/Start Button" to="." method="_on_Start_Button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quit Button" to="." method="_on_Quit_Button_pressed"]

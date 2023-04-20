@@ -29,19 +29,10 @@ Rowboats: https://opengameart.org/node/79264
 Cloud Tiles: https://opengameart.org/content/cloud-tileset
 
 Cowboys:
-<<<<<<< HEAD
 Background: Desert dunes background (looping, 8 colours, 16 bit) | OpenGameArt.org
 Tiles: Pixel art sand tileset | OpenGameArt.org
 Clouds: Tileset and assets for a Scorched Earth type game | OpenGameArt.org
 Door: https://opengameart.org/content/castle-door
-=======
-Background: https://opengameart.org/content/desert-dunes-background-looping-8-colours-16-bit
-Tiles: https://opengameart.org/content/pixel-art-sand-tileset
-Clouds: https://opengameart.org/content/tileset-and-assets-for-a-scorched-earth-type-game
-<<<<<<< HEAD
->>>>>>> parent of 2bcf1a9 (Merge branch 'main' of https://github.com/brothen/Final_Project)
-=======
->>>>>>> parent of 2bcf1a9 (Merge branch 'main' of https://github.com/brothen/Final_Project)
 
 
 ## References
