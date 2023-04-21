@@ -1501,54 +1501,5 @@ polygon = PoolVector2Array( 7, -14.9, 15, -7.9, 15, -5.4, 16, -0.1, 16, 2, 14.8,
 
 [node name="Alien" type="KinematicBody2D" parent="Enemy_container"]
 
-<<<<<<< Updated upstream
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Enemy_container/Alien"]
 frames = SubResource( 1 )
-=======
-[node name="Sprite" type="Sprite" parent="Enemy_container/Alien"]
-texture = ExtResource( 69 )
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Enemy_container/Alien"]
-polygon = PoolVector2Array( 32.5, -74.5, 34.2, -64.5, 44.3, -64.5, 47.5, -61.3, 47.5, -51.5, 57.3, -51.5, 60.5, -48.3, 60.5, 6.2, 47.5, 8.2, 47.5, 19.2, 34.5, 21.2, 34.5, 26.5, 45.2, 26.5, 47.2, 39.5, 57.3, 39.5, 60.5, 42.7, 60.5, 71.5, 57.8, 71.5, 41.5, 73.8, 41.5, 70.8, 39.8, 60.5, 29.7, 60.5, 26.5, 57.3, 26.5, 47.5, -17.5, 47.5, -17.5, 58.2, -30.5, 60.2, -30.5, 70.3, -33.7, 73.5, -48.3, 73.5, -51.5, 70.3, -51.5, 41.8, -38.5, 39.8, -38.5, 29.7, -35.3, 26.5, -25.5, 26.5, -25.5, 21.5, -36.5, 21.5, -36.5, 18.8, -38.2, 8.5, -48.3, 8.5, -51.5, 5.3, -51.5, -49.5, -48.8, -49.5, -38.5, -51.2, -38.5, -61.3, -35.3, -64.5, -25.5, -64.5, -25.5, -74.7, -23.5, -75.7, -23.5, -77.5, 32.5, -77.5 )
-
-[node name="Area2D" type="Area2D" parent="Enemy_container/Alien"]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Enemy_container/Alien/Area2D"]
-polygon = PoolVector2Array( -25, -81, 32, -79, 44, -66, 55, -52, 61, 6, 58, 42, 59, 70, 41, 72, -29, 70, -52, 70, -52, 42, -52, 3, -50, -55, -38, -64 )
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="HUD" type="Control" parent="CanvasLayer"]
-margin_right = 40.0
-margin_bottom = 40.0
-script = ExtResource( 68 )
-
-[node name="Background" type="ColorRect" parent="CanvasLayer/HUD"]
-margin_right = 1024.0
-margin_bottom = 20.0
-color = Color( 0, 0, 0, 0.501961 )
-
-[node name="Score" type="Label" parent="CanvasLayer/HUD"]
-margin_left = 512.0
-margin_right = 1024.0
-margin_bottom = 20.0
-text = "Score"
-align = 2
-valign = 1
-
-[node name="Lives" type="Label" parent="CanvasLayer/HUD"]
-margin_right = 512.0
-margin_bottom = 20.0
-text = "Lives"
-valign = 1
-
-[node name="Level_1_Exit" type="Area2D" parent="."]
-position = Vector2( 4200, 330 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Level_1_Exit"]
-position = Vector2( 24, -51 )
-shape = SubResource( 64 )
-
-[connection signal="body_entered" from="Enemy_container/Alien/Area2D" to="Enemy_container/Alien" method="_on_Area2D_body_entered"]
-[connection signal="body_entered" from="Level_1_Exit" to="Player_container/Player" method="_on_Level_1_Exit_body_entered"]
->>>>>>> Stashed changes
