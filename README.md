@@ -38,7 +38,7 @@ Greg Hyatt: Implemented player animations, Designed level 1, made camera, made H
 
 Luke Whitsell: Implemented title screen, designed level 2/pirate level
 
-Booker Rothenberg: Implemented movement, gravity flipping mechanic, and level exits. Designed desert level.
+Booker Rothenberg: Implemented movement, gravity flipping mechanic, and level exits. Designed desert level, implemented end game screen
 
 
 ## References
