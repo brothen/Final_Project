@@ -34,6 +34,10 @@ Tiles: Pixel art sand tileset | OpenGameArt.org
 Clouds: Tileset and assets for a Scorched Earth type game | OpenGameArt.org
 Door: https://opengameart.org/content/castle-door
 
+Greg Hyatt:
+Luke Whitsell:
+Booker Rothenberg: Implemented movement, gravity flipping mechanic, and level exits. Designed desert level.
+
 
 ## References
 The gravity flipping idea actually came from a reference to Jet Pack Joyride's gravity suit, we hope we implemented the strategy of that well.
@@ -42,5 +46,5 @@ Walking on the clouds in the Pirate level is a reference to the anime "One Piece
 ## Future Development
 No future development planned
 
-# Created by: Group Name
+# Created by: Cowboy Pirates
 Booker Rothenberg, Greg Hyatt, and Luke Whitsell
