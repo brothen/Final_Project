@@ -40,6 +40,9 @@ Luke Whitsell: Implemented title screen, designed level 2/pirate level
 
 Booker Rothenberg: Implemented movement, gravity flipping mechanic, and level exits. Designed desert level, implemented end game screen
 
+Link to our Google Slides if needed: 
+https://docs.google.com/presentation/d/1vBBu2Sgtv6o8WknVJeZ-NtJEQ37jeNDcqD5z1z6LYEU/edit?usp=sharing
+
 
 ## References
 The gravity flipping idea actually came from a reference to Jet Pack Joyride's gravity suit, we hope we implemented the strategy of that well.
