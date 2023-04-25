@@ -35,7 +35,9 @@ Clouds: Tileset and assets for a Scorched Earth type game | OpenGameArt.org
 Door: https://opengameart.org/content/castle-door
 
 Greg Hyatt: Implemented player animations, Designed level 1, made camera, made HUD
+
 Luke Whitsell:
+
 Booker Rothenberg: Implemented movement, gravity flipping mechanic, and level exits. Designed desert level.
 
 
