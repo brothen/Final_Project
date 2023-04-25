@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-export var speed = 100
+export var speed = 0.5
 export var damage = 10
 var direction =  1
 var velocity = Vector2.ZERO
@@ -21,4 +21,3 @@ func _on_Area2D_body_entered(body):
 		direction *= -1
 	if body.name == "Player":
 		queue_free()
-		Global.update_Lives(-1)

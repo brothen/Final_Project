@@ -10,7 +10,6 @@ func _physics_process(_delta):
 	if player == null:
 		player = get_node_or_null("/root/Level1/Player_container/Player")
 	else:
-		ray.cast_to = ray.to_local(player.global_position)
 		var c = ray.get_collider()
 		if c:
 			var velocity = ray.cast_to.normalized()*looking_speed
