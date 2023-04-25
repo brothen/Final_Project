@@ -36,14 +36,14 @@ Door: https://opengameart.org/content/castle-door
 
 Greg Hyatt: Implemented player animations, Designed level 1, made camera, made HUD
 
-Luke Whitsell:
+Luke Whitsell: Implemented title screen, designed level 2/pirate level
 
 Booker Rothenberg: Implemented movement, gravity flipping mechanic, and level exits. Designed desert level.
 
 
 ## References
 The gravity flipping idea actually came from a reference to Jet Pack Joyride's gravity suit, we hope we implemented the strategy of that well.
-Walking on the clouds in the Pirate level is a reference to the anime "One Piece"
+Walking on the clouds in the Pirate level is a reference to the anime "One Piece," where they go to a ocean in the clouds during the Skypeia arc.
 
 ## Future Development
 No future development planned
